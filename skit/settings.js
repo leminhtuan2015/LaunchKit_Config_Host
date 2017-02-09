@@ -23,7 +23,7 @@ module.exports = {
 
 	// The path to the LaunchKit API server, from the perspective of the
 	// node.js webserver.
-	API_URL: 'http://localhost:9101/',
+	API_URL: 'http://192.168.0.100:9101/',
 
 	// This should be the same as settings.py's APP_ENGINE_HOST value,
 	// and should only be changed in the case that you are modifying

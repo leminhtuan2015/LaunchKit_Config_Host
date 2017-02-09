@@ -73,13 +73,15 @@ HOSTED_WEBSITE_CNAME = "domains.yoursite.com"
 # corporate network, set your SITE_URL to the user-facing address. (This is
 # used for generating links in emails & such.)
 
-SITE_URL = "http://localhost:9100/"
+#SITE_URL = "http://localhost:9100/"
+SITE_URL = "http://192.168.0.100:9100/"
 
 #
 # The path to the LaunchKit API server, from the perspective of a client.
 #
 
-API_URL = "http://localhost:9101/"
+#API_URL = "http://localhost:9101/"
+API_URL = "http://192.168.0.100:9101/"
 
 # Similar to SITE_URL, if you end up actually creating an App Engine host for
 # your images, you can set that URL here. (eg. "https://foobar.appspot.com")
@@ -90,7 +92,8 @@ API_URL = "http://localhost:9101/"
 # IMPORTANT: If you modify this value, also modify the value in
 # skit/settings.js to the same value.
 #
-APP_ENGINE_PHOTOS_UPLOAD_BASE_PATH = "http://localhost:9102"
+#APP_ENGINE_PHOTOS_UPLOAD_BASE_PATH = "http://localhost:9102"
+APP_ENGINE_PHOTOS_UPLOAD_BASE_PATH = "http://192.168.0.100:9102"
 
 #
 # SECRETS

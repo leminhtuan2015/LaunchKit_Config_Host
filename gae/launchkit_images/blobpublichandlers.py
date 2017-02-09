@@ -144,7 +144,8 @@ class PublicFileUploadHandler(PublicHandler):
     if self.app.debug:
       scheme, netloc, path, params, query, fragment = urlparse.urlparse(blobstore_upload_url)
       host, port = netloc.split(':')
-      host = self.request.headers.get('host', 'localhost').split(':')[0]
+      #host = self.request.headers.get('host', 'localhost').split(':')[0]
+      host='192.168.0.100'
       netloc = '%s:%s' % (host, port)
       blobstore_upload_url = urlparse.urlunparse([scheme, netloc, path, params, query, fragment])
 
