@@ -79,7 +79,7 @@ class Image(APIModel):
         args.append('q%d' % quality)
     #return self.gae_image_url + '=%s' % '-'.join(args)
     self.gae_image_url + '=%s' % '-'.join(args)
-    self.gae_image_url = self.gae_image_url.replace("localhost","192.168.x.x")
+    self.gae_image_url = self.gae_image_url.replace("localhost","123.4.5.6")
     return self.gae_image_url
 
   def to_dict(self):
