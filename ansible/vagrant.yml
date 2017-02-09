@@ -1,0 +1,24 @@
+---
+- hosts: all
+  become: true
+  vars:
+    document_root: /vagrant
+    db_user: vagrant
+  pre_tasks:
+    - name: update apt cache
+      apt: update_cache=yes cache_valid_time=3600
+  roles:
+    - common
+    - common-python
+    - redis
+    - postgres
+    - lk-django
+    - lk-review-ingester
+    - lk-go-devproxy
+    - lk-google-app-engine
+    - lk-skit
+
+  post_tasks:
+    - name: start launchkit
+      service: name=launchkit state=started
+      ignore_errors: yes
