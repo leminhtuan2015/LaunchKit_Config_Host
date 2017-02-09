@@ -23,12 +23,12 @@ module.exports = {
 
 	// The path to the LaunchKit API server, from the perspective of the
 	// node.js webserver.
-       API_URL: 'http://xxxx:9101/',
+       API_URL: 'http://192.168.0.100:9101/',
 
 	// This should be the same as settings.py's APP_ENGINE_HOST value,
 	// and should only be changed in the case that you are modifying
 	// hosting configuration.
 	// (This is passed through to client-side JavaScript in order to figure
 	// out where images should be uploaded.)
-       APP_ENGINE_HOST: 'http://xxxx:9102/',
+       APP_ENGINE_HOST: 'http://192.168.0.100:9102/',
 };
